@@ -1,0 +1,18 @@
+---
+import { CHECKOUT_SLUGS } from '../../config/checkout';
+import { CHECKOUT_PATH_REDIRECTS } from '../../config/checkout-redirects.mjs';
+
+export function getStaticPaths() {
+  return Object.values(CHECKOUT_SLUGS).map((slug) => ({ params: { product: slug } }));
+}
+
+const { product } = Astro.params;
+const pathname = `/go/${product}/`;
+const destination = CHECKOUT_PATH_REDIRECTS.get(pathname) ?? CHECKOUT_PATH_REDIRECTS.get(`/go/${product}`);
+
+if (!destination) {
+  return Astro.redirect('/', 302);
+}
+
+return Astro.redirect(destination, 302);
+---

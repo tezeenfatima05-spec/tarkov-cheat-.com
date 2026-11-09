@@ -1,0 +1,24 @@
+{
+  "name": "Tarkov Cheat",
+  "short_name": "Tarkov Cheat",
+  "description": "Escape from Tarkov cheats with aimbot, player ESP, loot ESP, and radar for PC raids.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0d10",
+  "theme_color": "#7f3dee",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32.png",
+      "purpose": "any maskable",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}
