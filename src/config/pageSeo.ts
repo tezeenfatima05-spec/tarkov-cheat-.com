@@ -9,7 +9,7 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Tarkov Cheats For Pc – Escape from Tarkov | Tarkov Cheat',
+    title: 'Tarkov Cheats For Pc – Escape from | Cheat',
     description:
       'Explore Escape from Tarkov cheats for PC featuring customizable aimbot, player ESP, loot ESP, extraction tracking, radar, no recoil, thermal vision, and.',
   },
@@ -31,12 +31,12 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/blog/': {
     title: 'Guides – and patch-day checks for Escape from Tarkov',
     description:
-      'Setup guides, aimbot tuning, loot ESP filters, extraction tracking, and patch-day checks for Escape from Tarkov.',
+      'Setup guides, aimbot tuning, loot ESP filters, extraction tracking, and patch-day checks for Escape from Tarkov raids.',
   },
   '/forum/': {
     title: 'Tarkov Community Forum – Discuss raid setups | Cheat',
     description:
-      'Tarkov Community Forum: Discuss raid setups, loot routes, feature configs, and troubleshooting for Escape from Tarkov.',
+      'Tarkov Community Forum: Discuss raid setups, loot routes, feature configs, and troubleshooting for Escape from Tarkov players.',
   },
   '/faq/': {
     title: 'Cheats – All topics Browse by category Filter | Tarkov Cheat',

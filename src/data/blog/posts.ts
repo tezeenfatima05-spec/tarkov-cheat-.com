@@ -43,6 +43,7 @@ export const blogPosts: BlogPostFull[] = [
   {
     tag: 'Setup',
     title: 'Tarkov aimbot settings: FOV, bones, and visible check',
+    h1: 'Tarkov aimbot settings: FOV, bones, and visible check | Cheat',
     slug: 'tarkov-aimbot-settings-guide',
     image: '/images/blog/tarkov-aimbot-settings-guide.png',
     desc: 'Aimbot: Tune dynamic FOV, smart bone lists, prediction, and teammate filters for raid combat. All articles Setup 7 min read Nov 7, 2026 Tarkov aimbot.',
@@ -68,6 +69,8 @@ export const blogPosts: BlogPostFull[] = [
   {
     tag: 'Setup',
     title: 'Tarkov player ESP and wallhack setup',
+    metaTitle: 'Esp – Enable type filters first—PMC, Scav, boss, and | Cheat',
+    h1: 'Tarkov player ESP and wallhack setup | Cheat',
     slug: 'tarkov-player-esp-guide',
     image: '/images/blog/tarkov-player-esp-guide.png',
     desc: 'PMC, Scav, and boss ESP with skeleton, health, and quest mark tuning. All articles Setup 6 min read Nov 6, 2026 Tarkov player ESP and wallhack setup PMC.',

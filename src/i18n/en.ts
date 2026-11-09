@@ -550,21 +550,23 @@ export const en: Translations = {
         {
           heading: 'Who we are',
           paragraphs: [
-            'Tarkov Cheat is a PC-focused resource for Escape from Tarkov players exploring aimbot, player ESP, loot ESP, and movement misc workflows. We publish setup guides, feature explainers, and status notes so you can evaluate tools before checkout.',
-            'Battlestate Games and Escape from Tarkov are trademarks of their respective owners. This site is not affiliated with them.',
+            'This site is a PC-focused resource for Escape from Tarkov players exploring aimbot, player ESP, loot ESP, and movement misc workflows. We publish setup guides, feature explainers, and status notes so you can evaluate tools before checkout.',
+            'Battlestate Games and Escape from Tarkov are trademarks of their respective owners. We are not affiliated with them.',
           ],
         },
         {
           heading: 'What we publish',
           paragraphs: [
-            'Our site covers the full raid cheat build, HWID utilities, Cloud DMA workflows, and configuration guides. Blog articles explain conservative presets, patch-day checks, and loot filter tuning.',
+            'Product pages cover the full raid build, HWID utilities, Cloud DMA workflows, and configuration guides. Blog articles explain conservative presets, patch-day checks, and loot filter tuning.',
             'Content updates when patches land or loader modules shift. Check the homepage status banner and Discord #status before every session.',
+            'Editorial coverage stays practical: comparisons between loot filters, radar layouts, and loader reload steps after game updates rather than hype claims.',
           ],
         },
         {
           heading: 'Support',
           paragraphs: [
             'Questions about compatibility, loader errors, or checkout are handled through Discord and email support. Include your order email, client version, and Windows build when opening a ticket.',
+            'For privacy or billing policy details, use the Privacy Policy and Terms pages linked in the footer.',
           ],
         },
       ],
@@ -595,6 +597,13 @@ export const en: Translations = {
           heading: 'Support',
           paragraphs: [
             'For privacy questions, use the options on the Support page. Purchase and refund rules are in our Terms & Conditions.',
+          ],
+        },
+        {
+          heading: 'Your choices',
+          paragraphs: [
+            'You can disable analytics cookies in your browser without losing access to guides or product pages. Support correspondence is retained only as long as needed to resolve your request.',
+            'We do not sell personal information. If a processor or hosting provider changes, this policy will note the update date at the top of the page.',
           ],
         },
       ],

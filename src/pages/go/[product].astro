@@ -35,11 +35,16 @@ const pagePath = pathname;
   ]}
 >
   <meta slot="head" http-equiv="refresh" content={`2;url=${destination}`} />
-  <section class="mx-auto max-w-2xl px-5 py-16">
+  <article class="mx-auto max-w-2xl px-5 py-16">
     <h1 class="text-2xl font-bold tracking-tight">{seo.h1}</h1>
     <p class="mt-4 text-muted-foreground">
       Redirecting from <code>{pathname}</code> to secure checkout. If nothing happens,{' '}
       <a href={destination} class="text-primary underline">continue to checkout</a>.
     </p>
-  </section>
+  {
+    seo.paragraphs?.map((paragraph) => (
+      <p class="mt-4 text-sm leading-relaxed text-muted-foreground">{paragraph}</p>
+    ))
+  }
+  </article>
 </BaseLayout>

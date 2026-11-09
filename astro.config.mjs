@@ -4,10 +4,12 @@ import sitemap from '@astrojs/sitemap';
 import cloudflare from '@astrojs/cloudflare';
 import { sitemapSerialize } from './src/config/sitemap.ts';
 
+const siteUrl = (process.env.PUBLIC_SITE_URL || 'https://tarkov-cheat.com').replace(/\/$/, '');
+
 export default defineConfig({
   output: 'static',
   adapter: cloudflare(),
-  site: 'https://tarkov-cheat.com',
+  site: siteUrl,
   trailingSlash: 'always',
   redirects: {
     '/cheats/': '/products/escape-from-tarkov-cheats/',

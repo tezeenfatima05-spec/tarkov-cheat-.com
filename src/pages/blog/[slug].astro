@@ -68,7 +68,7 @@ const published = parseBlogDate(post.date);
 ---
 
 <BaseLayout
-  title={pageTitle(post.title, 'Cheat')}
+  title={post.metaTitle ?? pageTitle(post.title, 'Cheat')}
   description={post.desc}
   ogType="article"
   ogImage={post.image}
@@ -110,7 +110,7 @@ const published = parseBlogDate(post.date);
           </figure>
 
           <header class="blog-article__header">
-            <h1 class="blog-article__title">{post.title}</h1>
+            <h1 class="blog-article__title">{post.h1 ?? `${post.title} | Cheat`}</h1>
             <p class="blog-article__lead">{post.desc}</p>
             {
               post.author && (

@@ -9,5 +9,9 @@ export type BlogBlock =
 export interface BlogPostFull extends BlogPost {
   featured?: boolean;
   author?: string;
+  /** Overrides default <title> (e.g. keyword-led meta title). */
+  metaTitle?: string;
+  /** Optional H1 override for on-page heading. */
+  h1?: string;
   body: BlogBlock[];
 }
