@@ -1,9 +1,12 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
+import cloudflare from '@astrojs/cloudflare';
 import { sitemapSerialize } from './src/config/sitemap.ts';
 
 export default defineConfig({
+  output: 'static',
+  adapter: cloudflare(),
   site: 'https://tarkov-cheat.com',
   trailingSlash: 'always',
   redirects: {

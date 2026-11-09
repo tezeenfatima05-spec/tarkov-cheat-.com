@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { resolveDistImageRoots } from './resolve-dist-output.mjs';
 
 /** Drop source PNGs from dist — pages serve WebP variants only. */
-const distImages = path.resolve('dist/images');
 let removed = 0;
 let bytes = 0;
 
@@ -15,7 +15,6 @@ function walk(dir) {
       continue;
     }
     if (!/\.png$/i.test(entry.name)) continue;
-    // Keep brand/favicon-sized assets if any land under images; gameplay/blog sources go.
     const stat = fs.statSync(full);
     if (stat.size < 80_000) continue;
     bytes += stat.size;
@@ -24,7 +23,10 @@ function walk(dir) {
   }
 }
 
-walk(distImages);
+for (const distImages of resolveDistImageRoots()) {
+  walk(distImages);
+}
+
 console.log(
-  `Pruned ${removed} source PNG(s) from dist/images (${(bytes / 1024 / 1024).toFixed(1)} MB).`,
+  `Pruned ${removed} source PNG(s) from dist image folders (${(bytes / 1024 / 1024).toFixed(1)} MB).`,
 );
