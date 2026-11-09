@@ -8,7 +8,7 @@ export const blogPosts: BlogPostFull[] = [
     title: 'Escape from Tarkov cheats features: aimbot, ESP, loot and radar',
     slug: 'tarkov-cheats-features-guide',
     image: '/images/blog/tarkov-cheats-features-guide.png',
-    desc: 'Complete overview of aimbot, player ESP, loot ESP, radar, misc options, and config import/export.',
+    desc: 'Features: Complete overview of aimbot, player ESP, loot ESP, radar, misc options, and config import/export. All articles Features 11 min read Nov 8, 2026.',
     date: 'Nov 8, 2026',
     readTime: '11 min read',
     featured: true,
@@ -45,7 +45,7 @@ export const blogPosts: BlogPostFull[] = [
     title: 'Tarkov aimbot settings: FOV, bones, and visible check',
     slug: 'tarkov-aimbot-settings-guide',
     image: '/images/blog/tarkov-aimbot-settings-guide.png',
-    desc: 'Tune dynamic FOV, smart bone lists, prediction, and teammate filters for raid combat.',
+    desc: 'Aimbot: Tune dynamic FOV, smart bone lists, prediction, and teammate filters for raid combat. All articles Setup 7 min read Nov 7, 2026 Tarkov aimbot.',
     date: 'Nov 7, 2026',
     readTime: '7 min read',
     body: [
@@ -70,7 +70,7 @@ export const blogPosts: BlogPostFull[] = [
     title: 'Tarkov player ESP and wallhack setup',
     slug: 'tarkov-player-esp-guide',
     image: '/images/blog/tarkov-player-esp-guide.png',
-    desc: 'PMC, Scav, and boss ESP with skeleton, health, and quest mark tuning.',
+    desc: 'PMC, Scav, and boss ESP with skeleton, health, and quest mark tuning. All articles Setup 6 min read Nov 6, 2026 Tarkov player ESP and wallhack setup PMC.',
     date: 'Nov 6, 2026',
     readTime: '6 min read',
     body: [

@@ -9,9 +9,9 @@ export interface PageSeoEntry {
 
 export const PAGE_SEO: Record<string, PageSeoEntry> = {
   '/': {
-    title: 'Escape from Tarkov Cheats — Aimbot, ESP & Loot | Tarkov Cheat',
+    title: 'Tarkov Cheats For Pc – Escape from Tarkov | Tarkov Cheat',
     description:
-      'Explore Escape from Tarkov cheats for PC featuring customizable aimbot, player ESP, loot ESP, extraction tracking, radar, no recoil, thermal vision, and Cloud DMA support.',
+      'Explore Escape from Tarkov cheats for PC featuring customizable aimbot, player ESP, loot ESP, extraction tracking, radar, no recoil, thermal vision, and.',
   },
   '/products/escape-from-tarkov-cheats/': {
     title: 'Escape from Tarkov Cheats & Utility Products',
@@ -29,18 +29,19 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Choose HWID Spoofer or Cloud DMA—when each utility fits and links to full product pages.',
   },
   '/blog/': {
-    title: 'Tarkov Cheats Guides & Raid Tips',
+    title: 'Guides – and patch-day checks for Escape from Tarkov',
     description:
       'Setup guides, aimbot tuning, loot ESP filters, extraction tracking, and patch-day checks for Escape from Tarkov.',
   },
   '/forum/': {
-    title: 'Tarkov Community Forum | Tarkov Cheat',
-    description: 'Discuss raid setups, loot routes, feature configs, and troubleshooting for Escape from Tarkov.',
+    title: 'Tarkov Community Forum – Discuss raid setups | Cheat',
+    description:
+      'Tarkov Community Forum: Discuss raid setups, loot routes, feature configs, and troubleshooting for Escape from Tarkov.',
   },
   '/faq/': {
-    title: 'FAQ | Escape from Tarkov Cheats & Setup',
+    title: 'Cheats – All topics Browse by category Filter | Tarkov Cheat',
     description:
-      'Answers on Tarkov cheats, ESP, aimbot, HWID tools, checkout, and guides at tarkov-cheat.com.',
+      'Answers on Tarkov cheats, ESP, aimbot, HWID tools, checkout, and guides at tarkov-cheat.com. Help center FAQ for cheats, products & guides Everything.',
   },
   '/terms/': {
     title: 'Terms & Conditions | Tarkov Cheat',
@@ -48,14 +49,14 @@ export const PAGE_SEO: Record<string, PageSeoEntry> = {
       'Purchase terms, license use, and refund policy for products sold through tarkov-cheat.com.',
   },
   '/privacy/': {
-    title: 'Privacy Policy | Tarkov Cheat',
+    title: 'Privacy – and contact data when you browse or | Tarkov Cheat',
     description:
-      'How tarkov-cheat.com uses analytics, cookies, and contact data when you browse or request support.',
+      'Privacy: How tarkov-cheat.com uses analytics, cookies, and contact data when you browse or request support. Privacy Policy How Tarkov Cheat handles.',
   },
   '/about/': {
-    title: 'About Tarkov Cheat',
+    title: 'About Tarkov Cheat — Guides, Products & Raid Tools',
     description:
-      'What Tarkov Cheat publishes: Escape from Tarkov cheat features, utilities, guides, and status notes.',
+      'About Tarkov Cheat: What we publish on Escape from Tarkov cheat features, utilities, setup guides, patch status, and support resources at tarkov-cheat.com.',
   },
   '/support/': {
     title: 'Support | Tarkov Cheat',

@@ -1,18 +1,45 @@
 ---
-import { CHECKOUT_SLUGS } from '../../config/checkout';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CHECKOUT_SLUGS, CHECKOUT_SLUG_TO_PRODUCT } from '../../config/checkout';
 import { CHECKOUT_PATH_REDIRECTS } from '../../config/checkout-redirects.mjs';
+import { getGoPageSeo } from '../../config/go-page-seo';
+import { webPageSchema } from '../../utils/schema';
 
 export function getStaticPaths() {
   return Object.values(CHECKOUT_SLUGS).map((slug) => ({ params: { product: slug } }));
 }
 
-const { product } = Astro.params;
-const pathname = `/go/${product}/`;
-const destination = CHECKOUT_PATH_REDIRECTS.get(pathname) ?? CHECKOUT_PATH_REDIRECTS.get(`/go/${product}`);
+const { product: slug } = Astro.params;
+const pathname = `/go/${slug}/`;
+const destination =
+  CHECKOUT_PATH_REDIRECTS.get(pathname) ?? CHECKOUT_PATH_REDIRECTS.get(`/go/${slug}`);
 
 if (!destination) {
   return Astro.redirect('/', 302);
 }
 
-return Astro.redirect(destination, 302);
+const checkoutProduct = CHECKOUT_SLUG_TO_PRODUCT[slug!];
+const seo = getGoPageSeo(checkoutProduct, slug!);
+const pagePath = pathname;
 ---
+
+<BaseLayout
+  title={seo.title}
+  description={seo.description}
+  jsonLd={[
+    webPageSchema({
+      name: seo.h1,
+      description: seo.description,
+      url: pagePath,
+    }),
+  ]}
+>
+  <meta slot="head" http-equiv="refresh" content={`2;url=${destination}`} />
+  <section class="mx-auto max-w-2xl px-5 py-16">
+    <h1 class="text-2xl font-bold tracking-tight">{seo.h1}</h1>
+    <p class="mt-4 text-muted-foreground">
+      Redirecting from <code>{pathname}</code> to secure checkout. If nothing happens,{' '}
+      <a href={destination} class="text-primary underline">continue to checkout</a>.
+    </p>
+  </section>
+</BaseLayout>
